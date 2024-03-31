@@ -1,0 +1,22 @@
+<ion-app>
+<ion-content padding>
+    <h3>无限滚动</h3>
+    <ion-card>
+        <ion-item *ngFor="let n of list; let i = index">
+            <ion-label>
+                <h2>{{i}} - {{n}}</h2>
+                <h3>{{i}} - {{n}}</h3>
+                <p>{{i}} - {{n}}</p>
+            </ion-label>
+        </ion-item>
+    </ion-card>
+    <!--无限滚动组件-->
+    <ion-infinite-scroll #myScroll threshold="100px" (ionInfinite)="loadMore()">
+        <ion-infinite-scroll-content 
+        loadingSpinner="bubbles"
+        loadingText="加载中请稍侯..."
+        >
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>
+</ion-app>

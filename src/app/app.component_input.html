@@ -1,0 +1,33 @@
+<ion-app>
+<ion-content>
+    <h3>输入框</h3>
+    <input type="text">
+    <ion-input></ion-input> 
+    <ion-input placeholder="input username"></ion-input>
+    <ion-input placeholder="input password" type="password"></ion-input>
+    <ion-input clearInput placeholder="input password" type="password"></ion-input>
+    <h3>带标签的输入框</h3>
+    <ion-item><!--能够有分隔条水平线-->
+        <ion-label>username: </ion-label>
+        <ion-input placeholder="input username"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">position floating: </ion-label>
+        <ion-input placeholder="input username"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="fixed">position fixed: </ion-label>
+        <ion-input placeholder="input username"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="stacked">position stacked: </ion-label>
+        <ion-input placeholder="input username"></ion-input>
+    </ion-item>
+    <h3>搜索输入框</h3>
+    <ion-searchbar></ion-searchbar>
+    <ion-searchbar placeholder="Search Item"></ion-searchbar>
+    <ion-searchbar color="dark" showCancelButton="always"></ion-searchbar>
+    <ion-searchbar color="dark" showCancelButton="never"></ion-searchbar>
+    <!-- <ion-searchbar color="dark" showCancelButton="focus" (ngModelChange)="doChange()"></ion-searchbar> -->
+</ion-content>
+</ion-app>

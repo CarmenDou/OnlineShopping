@@ -1,0 +1,31 @@
+<ion-app>
+<ion-content padding>
+    <h3>简单的列表项</h3>
+    <ion-item><ion-label>简单列表项</ion-label></ion-item>
+    <ion-item color="danger"><ion-label>红色列表项</ion-label></ion-item>
+    <ion-item color="warning"><ion-label>黄色列表项</ion-label></ion-item>
+    <ion-item color="success"><ion-label>绿色列表项</ion-label></ion-item>
+
+    <h3>可以点击的列表项</h3>
+    <ion-item (click)="doClick()"><ion-label>可以点击列表项</ion-label></ion-item>
+    <ion-item href="http://www.tmooc.cn"><ion-label>超链接列表项</ion-label></ion-item>
+
+    <h3>带详情显示器的列表项</h3>
+    <ion-item detail="true"><ion-label>详情列表项</ion-label></ion-item>
+
+    <h3>复杂列表项</h3>
+    <ion-item>
+        <ion-avatar slot="start"><img src="../assets/1.png"></ion-avatar>
+        <ion-label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et est ad labore maxime deserunt maiores dignissimos debitis iste? Laboriosam corporis ratione fugiat expedita doloribus saepe dolorum amet illo nisi perferendis.</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-avatar slot="end"><img src="../assets/2.png"></ion-avatar>
+        <ion-label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid neque officia aspernatur facilis. Quas aspernatur ab iure rem hic praesentium in ratione, placeat culpa quis architecto consequatur! Porro, explicabo?</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-thumbnail slot="start"><img src="../assets/2.png"></ion-thumbnail>
+        <ion-label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid neque officia aspernatur facilis. Quas aspernatur ab iure rem hic praesentium in ratione, placeat culpa quis architecto consequatur! Porro, explicabo?</ion-label>
+        <ion-button slot="end">查看详情</ion-button>
+    </ion-item>
+</ion-content>
+</ion-app>
